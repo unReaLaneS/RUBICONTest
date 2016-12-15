@@ -1,0 +1,12 @@
+<div id="list" class="inner cover">
+    <div class="row">
+
+        <div class="col-lg-6" ng-repeat="x in movies.results | limitTo: 10">
+            <a ui-sref="movieDetails({id: x.id})" >
+                <h2>{{x.error}}</h2>
+                <img src="{{'https://image.tmdb.org/t/p/w300_and_h450_bestv2' + x.poster_path}}" alt="Generic placeholder image" height="400">
+                <h3>{{x.title}}</h3>
+            </a>
+        </div>
+    </div>
+</div>
